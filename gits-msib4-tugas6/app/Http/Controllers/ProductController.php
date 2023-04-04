@@ -11,7 +11,20 @@ class ProductController extends Controller
     public function home()
     {
         $data['title'] = 'Home';
-        $data['products'] = Product::all();
+        $products = Product::all();
+        $categories = Category::all();
+        $totalProduct=0;
+        $totalCategory=0;
+
+        foreach ($products as $product) {
+            $totalProduct++;
+        }
+        $data['products'] = $totalProduct;
+
+        foreach ($categories as $category) {
+            $totalCategory++;
+        }
+        $data['categories'] = $totalCategory;
 
         return view('index', $data);
     }

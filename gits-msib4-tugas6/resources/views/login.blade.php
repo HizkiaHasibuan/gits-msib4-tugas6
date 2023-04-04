@@ -24,8 +24,9 @@
                     @enderror
                 </div>
                 <p>
-                    Belum punya akun?
-                    <a href="{{ route('register') }}">silakan mendaftar.</a>
+                    
+                    Don't have an account?
+                    <a href="{{ route('register') }}">Sign up</a>
                 </p>
                 <button type="submit" class="btn btn-primary">Login</button>
             </form>

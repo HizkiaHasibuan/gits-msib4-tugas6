@@ -8,6 +8,7 @@
 <div class="col-md-4 mx-auto my-5">
     <div class="card">
         <div class="card-body">
+            <center><h4>Register</h4></center>
             <form action="{{ route("do.register") }}" method="POST">
                     @csrf
                     <div class="mb-3">
@@ -41,8 +42,8 @@
                         @enderror
                     </div>
                     <p>
-                        Sudah punya akun?
-                        <a href="{{ route('login') }}">silakan login.</a>
+                        Have an account?
+                        <a href="{{ route('login') }}">Log in</a>
                     </p>
                     <button type="submit" class="btn btn-primary">Register</button>
             </form>
