@@ -1,1 +1,2 @@
-# gits-msib4-tugas6
+Nama : Hizkia Dwi Andri Hasibuan\n
+Universitas : Universitas Udayana
